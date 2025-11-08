@@ -102,8 +102,8 @@ align-self: end;
   gap: 5px;
 }
 
-.search-form__label:hover {
-  text-decoration: underline 1px #FFF;
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -292,8 +292,8 @@ button:active {
   white-space: nowrap;
   overflow: hidden;
   max-width: 192px; 
-  
 }
+
 .content__video-card-description {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -304,6 +304,7 @@ button:active {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
+  overflow: hidden
 }
 
 .content__video-card-thumbnail {
